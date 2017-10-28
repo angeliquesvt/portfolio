@@ -23,3 +23,12 @@
   right: 0;
   top: 0;
 }
+.menu{
+  background: transparent!important;
+}
+nav a{
+  color:black!important;
+}
+nav {
+    box-shadow: unset!important;
+}
