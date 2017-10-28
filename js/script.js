@@ -1,3 +1,42 @@
+ $(document).ready(function () {
+            	/*/*
+            	*+ Ajax
+            	*/
+            	$('.formulaire').on('submit', function(e){
+                     e.preventDefault();
+                     /**
+                      *
+                      * @type jQuery
+                      * Récuperation des données
+                      */
+            		var nom = $('#last_name').val()
+            		var prenom =  $('#first_name').val()
+            		var message =  $('#textarea1').val()
+            		var email =  $('#email').val()
+                        /**
+                         *
+                         * @type type
+                         * Rassemble toute les variable en json
+                         */
+            		var envoiphp = {'nom': nom, 'prenom': prenom, 'message' : message, 'email': email}
+                       /**
+                        * Déclaration en ajax
+                        */
+                        $.ajax({
+            			dataType : 'json',
+            			url: 'send.php',
+            			type : 'POST',
+            			data : envoiphp,
+            			success : function(){
+            				$('.popup').show();
+            			}
+
+
+            		})
+            	})
+
+                $(".button-collapse").sideNav();
+            })
 /**
  * Automatically executed if DOM is ready
  */
