@@ -42,3 +42,6 @@ p{
 .formulaire{
     z-index:  -1;
 }
+.fake-menu{
+    height: 59px;
+}
