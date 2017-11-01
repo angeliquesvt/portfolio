@@ -11,46 +11,43 @@
         </style>
     </head>
     <body>
+
+
         <!--   barre de navigation -->
         <!--<canvas id="geometric" width="1317" height="678"></canvas>-->
 
         <!-- BARRE DE NAVIGATION -->
-        <div id="particles-js"></div>
-        <div class="canvas_overley">
-            <nav class="menu navbar navbar-expand-md navbar-light bg-light">
+            
+        <nav class="navbar sticky-top navbar-expand-sm" id="startchange">
+                <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class=" collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#presentation"><span class="ancre">Accueil</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#presentation"><span class="ancre">Présentation</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#compétences"><span class="ancre"> Compétences </span></a></li>
-                        <li class="nav-item"><a  class="nav-link" href="#realisations"><span class="ancre"> Réalisations </span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"> <span class="ancre">Contact </span></a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- ACCUEIL -->
-            <div class="fake-menu">
-                
+                <div class="justify-content-end collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav justify-content-end">
+                            <li class="nav-item"><a class="nav-link" href="#presentation"><span class="ancre">Accueil</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#presentation"><span class="ancre">Présentation</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#compétences"><span class="ancre"> Compétences </span></a></li>
+                            <li class="nav-item"><a  class="nav-link" href="#realisations"><span class="ancre"> Réalisations </span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact"> <span class="ancre">Contact </span></a></li>
+                    </ul> 
             </div>
-            <div class="container">
-                <div class="row">
+        </nav>
+      
+        <div id="particles-js"></div>
+            <!-- ACCUEIL -->
+            <div class="container ">
                     <div class="col-sm-12">
                         <h1>Angélique Souvant</h1>
                         <div class="row">
                             <p> Etudiante en développement web et programmation</p>
                         </div>
-                    </div>
                 </div>
             </div>
-        </div>
         <!--   Présentation -->
-        <main >
             <section id="presentation" class="">
-
-                <div class="row section">
+                <div class="container">
+                <div class="row">
                     <div class="col-sm-10">
                         <p> Je suis étudiante de seconde année de métier du multimédia et de l'internet.
                             <br/>J'étudie la communication, l'infographie et le développement.
@@ -60,6 +57,7 @@
                         <p> Mis à part les études, je suis une geek, amoureuse de Star wars de jeux vidéo et de séries TV... J'aime également le sport et surtout la boxe française </p>
                     </div>
                 </div>
+            </div>
             </section>
 
             <!--   COMPETENCE -->
@@ -72,7 +70,7 @@
             </section>
             <!--  Réalisations -->
             <section id="Réalisations">
-                <div class="container section">
+                <div class="container">
                     <div class="row col-sm-12">
                         <h3 class> Mes réalisations </h3>
                     </div>
@@ -111,12 +109,13 @@
                     </div>
                 </div>
             </section>
-        </main>
         <!-- FOOTER -->
         <footer >
             <div class="footer-copyright">
-                <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
                     © 2017 - Codé par Angélique Souvant
+                 </div>
                 </div>
             </div>
         </footer>
@@ -128,6 +127,32 @@
 
         <script src="js/app.js"></script>
         <script src="js/script.js"></script>
-
+        <script>
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar").css('background-color', '#d1e094');
+       } else {
+          $('.navbar').css('background-color', 'transparent');
+       }
+   });
+    }
+});</script>
+<script>
+    
+    $(function(){ 
+     var navMain = $(".navbar-collapse"); // avoid dependency on #id
+     // "a:not([data-toggle])" - to avoid issues caused
+     // when you have dropdown inside navbar
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+</script>
     </body>
 </html>
