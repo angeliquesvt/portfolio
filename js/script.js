@@ -10,7 +10,7 @@ $(document).ready(function () {
          * Récuperation des données
          */
         var nom = $('#last_name').val()
-        var prenom = $('#first_name').val()
+        var sujet = $('#subject').val()
         var message = $('#textarea1').val()
         var email = $('#email').val()
         /**
@@ -18,7 +18,7 @@ $(document).ready(function () {
          * @type type
          * Rassemble toute les variable en json
          */
-        var envoiphp = {'nom': nom, 'prenom': prenom, 'message': message, 'email': email}
+        var envoiphp = {'nom': nom, 'sujet': sujet, 'message': message, 'email': email}
         /**
          * Déclaration en ajax
          */

@@ -9,7 +9,7 @@ if (isset($_REQUEST)) {
      * Récuparation de variables
      */
     $nom = $_REQUEST['nom'];
-    $prenom = $_REQUEST['prenom'];
+    $sujet = $_REQUEST['sujet'];
     $email = $_REQUEST['email'];
     $textarea = $_REQUEST['message'];
     $sender = 'contact@angeliquesouvant.fr';
@@ -34,7 +34,7 @@ if (isset($_REQUEST)) {
             ->setSubject("Mon sujet")
             ->setFrom(array($sender))
             ->setTo(array("angelique.souvant@gmail.com"))
-            ->setBody("Nom: {$nom} <br/>Prénom: {$prenom}<br/>Mail: {$email} <br/><br/>Message:<br/><br/>{$textarea}", 'text/html');
+            ->setBody("Nom: {$nom} <br/>Mail: {$email} <br/><br/>Sujet: {$sujet}<br/>Message:<br/><br/>{$textarea}", 'text/html');
     /**
      * Envoi de ton email
      */
