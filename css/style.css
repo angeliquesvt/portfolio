@@ -135,6 +135,19 @@ footer{
 #titre-comp{
     color:;
 }
-li{
+.social-footer{
+    margin-left: 15px;
   list-style-type: none;
+  display: inline-block;
+}
+.social-contact{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.socials{
+    color:black;
+}
+.socials-link{
+    font-size: 14px;
+    color: grey;
 }
