@@ -11,24 +11,15 @@
     top: 0;
     left: 0;
 }*/
-.canvas_overley {
+/*.canvas_overley {
     bottom: 0;
     left: 0;
     opacity: 0.8;
     position: absolute;
     right: 0;
     top: 0;
-}
-/*.menu{
-    position: fixed;
-    background: transparent!important;
-    right: 0;
-    margin-right: 15px;
-    z-index: 15;
 }*/
-/*nav a{
-    color:black!important;
-}*/
+
 nav {
     box-shadow: unset!important;
 }
@@ -76,19 +67,13 @@ nav {
 .linkreal{
   border-radius: 1%;
   border: none;
-  background-color: #777a68 ;
+  background-color:#1e282a  ;
 }
-
-#presentation{
-  /*background-color:;*/
-  /*color:;*/
+.btn-secondary:hover{
+  border-radius: 1%;
+  border: none;
+  background-color: black ;
 }
-
-
-
-/**
- * Style menu
- */
 .navbar {
     background: rgba(30, 40, 43, 0);
     position: fixed;
@@ -110,7 +95,7 @@ nav {
 
 .navbar span.ancre,
 .navbar a {
-    color: white;
+    color: #fcfcfc;
 }
 
 .navbar span.ancre:hover {
@@ -127,7 +112,25 @@ nav {
 
 h1 {
     font-size:3.4rem;
+    color: #fcfcfc;
 }
 #intro{
     font-size:20px;
+    color: #aeaeae;
+}
+footer{
+    background-color: #282B30;
+}
+
+#presentation{
+    background-color:#fcfcfc;
+}
+#titre-pres{
+    color:#302D28; 
+}
+#compétences{
+    background-color: ;
+}
+#titre-comp{
+    color:;
 }
