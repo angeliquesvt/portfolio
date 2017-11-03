@@ -1,36 +1,49 @@
 $(document).ready(function () {
-      $('.post-module').hover(function () {
-          $(this).find('.description').stop().animate({
-              height: "toggle",
-              opacity: "toggle"
-          }, 300);
-      });
-      var navMain = $(".navbar-collapse");
-      navMain.on("click", "a:not([data-toggle])", null, function () {
-          navMain.collapse('hide');
-      });
-    /*/*
-     *+ Ajax
+
+    /**
+     * Sommaire
+     * 1 - Ancre sur le header
+     * 2 - Animation du menu
+     * 3 - Envoie du formulaire de contact
+     * 4 - Lancement fonction menu sticky
+     */
+    
+    /**
+     * 1 - Ancre sur le header
+     */
+    $('.nav-link').anchor({
+        transitionDuration: 700
+    });
+    /**
+     * Fin de l'ancre sur le header
+     */
+
+    /**
+     * 2 - Animation du menu
+     */
+    $('.post-module').hover(function () {
+        $(this).find('.description').stop().animate({
+            height: "toggle",
+            opacity: "toggle"
+        }, 300);
+    });
+    var navMain = $(".navbar-collapse");
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+        navMain.collapse('hide');
+    });
+    /**
+     * Fin de l'animation du menu
+     */
+
+    /**
+     * 3 - Envoie du formulaire de contact
      */
     $('.formulaire').on('submit', function (e) {
         e.preventDefault();
-        /**
-         *
-         * @type jQuery
-         * Récuperation des données
-         */
         var nom = $('#last_name').val()
         var message = $('#textarea1').val()
         var email = $('#email').val()
-        /**
-         *
-         * @type type
-         * Rassemble toute les variable en json
-         */
         var envoiphp = {'nom': nom, 'message': message, 'email': email}
-        /**
-         * Déclaration en ajax
-         */
         $.ajax({
             dataType: 'json',
             url: 'send.php',
@@ -39,34 +52,25 @@ $(document).ready(function () {
             success: function () {
                 $('.popup').show();
             }
-
-
         })
     })
-
-
+    /**
+     * Fin de l'envoie du formulaire de contact
+     */
 })
-/**
- * Automatically executed if DOM is ready
- */
-/*$(function () {
-    $('a').anchor({
-        transitionDuration: 700
-    });
-});*/
 
-/**
- * anchor.js - jQuery Plugin
- * Jump to a specific section smoothly
- *
- * @dependencies	jQuery v1.5.0 http://jquery.com
- * @author			Cornel Boppart <cornel@bopp-art.com>
- * @copyright		Author
+        /**
+         * anchor.js - jQuery Plugin
+         * Jump to a specific section smoothly
+         *
+         * @dependencies	jQuery v1.5.0 http://jquery.com
+         * @author			Cornel Boppart <cornel@bopp-art.com>
+         * @copyright		Author
+         
+         * @version		1.0.5 (02/11/2014)
+         */
 
- * @version		1.0.5 (02/11/2014)
- */
-
-;
+        ;
 (function ($) {
 
     window.anchor = {
@@ -170,16 +174,11 @@ $(document).ready(function () {
 
 
 /**
- * Lancement fonction menu sticky
+ * 4 - Lancement fonction menu sticky
  */
 
 $(document).ready(menusticky);
-$(window).on('resize scroll',menusticky);
-
-
-/**
- * menusticky function
- */
+$(window).on('resize scroll', menusticky);
 
 function menusticky() {
     if ($(window).scrollTop() > 20) {
@@ -188,3 +187,7 @@ function menusticky() {
         $(".navbar").removeClass("sticky");
     }
 }
+
+/**
+ * Fin du lancement fonction menu sticky
+ */
