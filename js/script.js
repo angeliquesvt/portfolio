@@ -158,3 +158,24 @@ $(document).ready(function () {
     };
 
 })(jQuery);
+
+
+/**
+ * Lancement fonction menu sticky
+ */
+
+$(document).ready(menusticky);
+$(window).on('resize scroll',menusticky);
+
+
+/**
+ * menusticky function
+ */
+
+function menusticky() {
+    if ($(window).scrollTop() > 20) {
+        $(".navbar").addClass("sticky");
+    } else {
+        $(".navbar").removeClass("sticky");
+    }
+}

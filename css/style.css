@@ -50,7 +50,7 @@ nav {
     height: 120px;
 }
 #footer {
-    background-color:;
+    /*background-color:;*/
     padding: 2% 0 0.5%;
 }
 .card:hover {
@@ -68,6 +68,47 @@ nav {
 }
 
 #presentation{
-  background-color:;
-  color:;
+  /*background-color:;*/
+  /*color:;*/
+}
+
+
+
+/**
+ * Style menu
+ */
+.navbar {
+    background: rgba(30, 40, 43, 0);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: 270ms;
+    transition-timing-function: ease-in-out;
+    z-index: 10;
+    padding: 20px 15px;
+}
+.navbar.sticky {
+    /*background: #1e282b;*/
+    background: rgba(17, 22, 24, 0.90);
+    transition: 270ms;
+    transition-timing-function: ease-in-out;
+    padding: 7px 15px;
+}
+
+.navbar span.ancre,
+.navbar a {
+    color: white;
+}
+
+.navbar span.ancre:hover {
+    color: grey;
+}
+
+.navbar-toggler-right {
+
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
 }
