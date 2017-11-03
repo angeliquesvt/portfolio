@@ -40,11 +40,11 @@ $(document).ready(function () {
 /**
  * Automatically executed if DOM is ready
  */
-$(function () {
+/*$(function () {
     $('a').anchor({
         transitionDuration: 700
     });
-});
+});*/
 
 /**
  * anchor.js - jQuery Plugin
