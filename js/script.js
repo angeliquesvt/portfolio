@@ -1,4 +1,14 @@
 $(document).ready(function () {
+      $('.post-module').hover(function () {
+          $(this).find('.description').stop().animate({
+              height: "toggle",
+              opacity: "toggle"
+          }, 300);
+      });
+      var navMain = $(".navbar-collapse");
+      navMain.on("click", "a:not([data-toggle])", null, function () {
+          navMain.collapse('hide');
+      });
     /*/*
      *+ Ajax
      */
@@ -52,7 +62,7 @@ $(document).ready(function () {
  * @dependencies	jQuery v1.5.0 http://jquery.com
  * @author			Cornel Boppart <cornel@bopp-art.com>
  * @copyright		Author
- 
+
  * @version		1.0.5 (02/11/2014)
  */
 

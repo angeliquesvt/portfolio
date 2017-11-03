@@ -4,22 +4,6 @@
 .ancre{
     font-size:18px;
 }
-/*#geometric {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}*/
-/*.canvas_overley {
-    bottom: 0;
-    left: 0;
-    opacity: 0.8;
-    position: absolute;
-    right: 0;
-    top: 0;
-}*/
-
 nav {
     box-shadow: unset!important;
 }
@@ -53,26 +37,25 @@ nav {
     height: 120px;
 }
 #footer {
-    /*background-color:;*/
     padding: 2% 0 0.5%;
 }
 .card:hover {
-  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .img-card img{
-  width: 100%;
-  height: 200px;
-  object-fit:cover;
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
 }
 .linkreal{
-  border-radius: 1%;
-  border: none;
-  background-color:#1e282a  ;
+    border-radius: 1%;
+    border: none;
+    background-color:#1e282a  ;
 }
 .btn-secondary:hover{
-  border-radius: 1%;
-  border: none;
-  background-color: black ;
+    border-radius: 1%;
+    border: none;
+    background-color: black ;
 }
 .navbar {
     background: rgba(30, 40, 43, 0);
@@ -86,15 +69,13 @@ nav {
     padding: 20px 15px;
 }
 .navbar.sticky {
-    /*background: #1e282b;*/
     background: rgba(17, 22, 24, 0.90);
     transition: 270ms;
     transition-timing-function: ease-in-out;
     padding: 7px 15px;
 }
 
-.navbar span.ancre,
-.navbar a {
+.navbar span.ancre,.navbar a {
     color: #fcfcfc;
 }
 
@@ -130,15 +111,15 @@ footer{
     color:#302D28;
 }
 #compétences{
-    background-color: ;
+
 }
 #titre-comp{
-    color:;
+
 }
 .social-footer{
     margin-left: 15px;
-  list-style-type: none;
-  display: inline-block;
+    list-style-type: none;
+    display: inline-block;
 }
 .social-contact{
     list-style-type: none;
