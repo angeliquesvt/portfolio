@@ -55,7 +55,9 @@ nav {
 .btn-secondary:hover{
     border-radius: 1%;
     border: none;
-    background-color: black ;
+    background-color: #c7cc78 ;
+    color:#1e282a;
+    cursor: pointer;
 }
 .navbar {
     background: rgba(30, 40, 43, 0);
@@ -113,6 +115,12 @@ footer{
 #compétences{
 
 }
+.link-rea{
+    color:#c7cc78;
+}
+.link-rea:hover{
+    color:#676D4B;
+}
 #titre-comp{
 
 }
@@ -131,4 +139,13 @@ footer{
 .socials-link{
     font-size: 14px;
     color: grey;
+}
+.socials-link:hover{
+    color: #c7cc78;
+}
+.socialfoot{
+    color:#c7cc78;
+}
+h3{
+    color:#758d47;
 }
