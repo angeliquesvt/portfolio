@@ -20,14 +20,14 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 1,
         density: {
           enable: true,
           value_area: 800
         }
       },
-      "color": {
-        "value": "white"
+      color : {
+        value: '#ffffff'
       },
       shape: {
         type: 'circle',
