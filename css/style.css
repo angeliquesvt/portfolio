@@ -32,6 +32,9 @@ nav {
 #accueil p {
     width: 100%;
 }
+#accueil .container {
+    margin: 0;
+}
 .comp{
     width: auto;
     height: 120px;
