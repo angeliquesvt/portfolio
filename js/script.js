@@ -191,3 +191,27 @@ function menusticky() {
 /**
  * Fin du lancement fonction menu sticky
  */
+
+
+
+
+/**
+ * 5 - Lancement fonction menu mobile
+ */
+
+
+$(document).ready(function () {
+    $('#nav-icon').click(function () {
+        $('.mobile-menu').toggleClass('nav-open');
+        $('#nav-icon').toggleClass('menu_open');
+    });
+    $('.nav-item').click(function () {
+        $('.mobile-menu').toggleClass('nav-open');
+        $('#nav-icon').toggleClass('menu_open');
+    });
+});
+
+
+/**
+ * Fin du lancement fonction menu mobile
+ */
