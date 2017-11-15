@@ -206,8 +206,10 @@ $(document).ready(function () {
         $('#nav-icon').toggleClass('menu_open');
     });
     $('.nav-item').click(function () {
-        $('.mobile-menu').toggleClass('nav-open');
-        $('#nav-icon').toggleClass('menu_open');
+        if ($(document).width() < 768) {
+            $('.mobile-menu').toggleClass('nav-open');
+            $('#nav-icon').toggleClass('menu_open');
+        }
     });
 });
 
