@@ -286,7 +286,7 @@ article, aside, footer, header, hgroup, main, nav, section {
     color:#3f484a;
 }
 .presentation{
-    padding: 100px 0;
+    padding: 50px 0;
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-around;
@@ -314,8 +314,12 @@ article, aside, footer, header, hgroup, main, nav, section {
     text-align: center;
     color:#3f484a;
 }
+#competences p{
+    color:grey;
+    text-align: center;
+}
 .skill{
-    padding: 100px 0px;
+    padding: 50px 0px;
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
@@ -334,6 +338,10 @@ article, aside, footer, header, hgroup, main, nav, section {
 #realisations h2{
     text-align: center;
     color:#3f484a;
+}
+#realisations p{
+    color:grey;
+    text-align: center;
 }
 .pf-container{
     display: -webkit-flex;
