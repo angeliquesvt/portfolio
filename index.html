@@ -95,21 +95,42 @@
             <article>
             	
 	            	<div class="pf-container">
-					<div class="pf pf-morpion" data-toggle="modal" data-target=".modal-ancre">>
-		            			<p>Création d'un morpion dans le cadre d'un projet scolaire</p>
-		            			<a href="link/tictactoe/tictactoe.html" target="_blank">Visiter le lien</a>
-		            			<h3>Morpion batman vs superman</h3>
-		            		</div>          
-	           			
-            		<div class="pf pf-ancre"><h3>Création site ancre</h3></div>
-            		<div class="pf pf-amjd"><h3>Refonte site AMJD</h3></div>
-            		<div class="pf pf-kenko"><h3>Projet tutoré</h3></div>
-            		<div class="pf pf-news"><h3>Newsletter paris games week</h3></div>
+					<div class="pf pf-morpion" data-toggle="modal" data-target=".modal-morpion"><h3>Morpion batman vs superman</h3></div>          		
+            		<div class="pf pf-ancre" data-toggle="modal" data-target=".modal-ancre"><h4>Création site ancre</h4></div>
+            		<div class="pf pf-amjd" data-toggle="modal" data-target=".modal-amjd"><h4>Refonte site AMJD</h4></div>
+            		<div class="pf pf-kenko" data-toggle="modal" data-target=".modal-kenko"><h4>Projet tutoré</h4></div>
+            		<div class="pf pf-news" data-toggle="modal" data-target=".modal-news"><h4>Newsletter paris games week</h4></div>
             	</div>
             </article>
         </section>
         <!-- MODALS -->
         <section>
+        	<!-- MODAL MORPION -->
+        	<div class="modal fade modal-morpion" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div  class="container p-3" >
+                            <div  class="row">
+                                <div class="col-sm-12">
+                                    <p>Dans le cadre d'un devoir en intégration web, j'étais chargé d'élaborer un morpion entièrement en javascript en utilisant les canvas.
+                                        <br/>Objectif:</p>
+                                    <ul>
+                                        <li>Apprendre à utiliser les canvas</li>
+                                        <li>Créer un jeu intéractif</li>
+                                        <li>Faire un jeu en javascript</li>
+                                        <li>Apprendre à utiliser les prototypes en javaScript</li>
+                                        <li>Mettre en place une interface avec les règle du jeu, sur le thème que l'on veut.</li>
+                                    </ul>
+                                    <a class="display-style" href="link/tictactoe/tictactoe.html" target="_blank"> Visiter le lien </a>
+                                    <br/>
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div class="modal fade modal-ancre" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -129,6 +150,9 @@
                                         <br/>J'ai choisi d'utiliser un CMS car c'est le choix le plus judicieux pour poster régulièrement des articles sur l'avancée de notre projet
                                         <br/> Concernant notre projet, il s'appelle "Fleet".
                                         <br/>C'est une platforme collaborative pour partager des idées et des contacts pour tout type de projet. Je suis la développeuse de l'équipe.</p>
+                                        <a class="display-style" href="http://ancre.angeliquesouvant.fr" target="_blank"> Visiter le site </a>
+                                        <br/>
+                                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Fermer</button>
                                 </div>
                             </div>
                         </div>
@@ -165,19 +189,20 @@
                                         </ul>
                                         <p>Ce travail m'a permis d'approfondir considérablement mes compétences</p>
                                     </blockquote>
+                                    <a class="display-style" href="http://amjd.fr" target="_blank"> Visiter site </a>
+                                    <br/>
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Fermer</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
         <!--  MODAL KENKO -->
         <div class="modal fade modal-kenko" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <section>
                         <div  class="container p-3" >
                             <div  class="row">
                                 <div class="col-sm-12">
@@ -202,6 +227,8 @@
                                             <li>Créer une présentation originale et interactive sur powerpoint</li>
                                         </ul>
                                     </blockquote>
+                                    <br/>
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Fermer</button>
                                 </div>
                             </div>
                         </div>
@@ -227,6 +254,9 @@
                                 <li>Etablir des tranches</li>
                                 <li>Adapter la taille et le format de la newsletter et du GIF au web</li>
                             </ul>
+                            <a class="display-style" href="link/news/news.html" target="_blank"> Voir la newsletter </a>
+                            <br/>
+                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Fermer</button>
                         </div>
                     </div>
                 </div>
@@ -276,20 +306,14 @@
 </section>
 <!-- FOOTER -->
 <footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                Codé par Angélique Souvant - 2017
-            </div>
-            <div class="col-sm-6">
-                <ul>
-                    <li class="social-footer"><a href="https://github.com/angeliquesvt" rel="nofollow" target="_blank"><i class="socialfoot fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="social-footer"><a href="https://www.linkedin.com/in/ang%C3%A9lique-souvant-02350b14b/" rel="nofollow" target="_blank"> <i class="socialfoot fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="social-footer"><i style="color:darkred;" class="fa fa-empire fa-2x" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<div class="foot">
+	    <p>Codé par Angélique Souvant - 2017</p>
+	    <ul>
+		    <li class="social-footer"><a href="https://github.com/angeliquesvt" rel="nofollow" target="_blank"><i class="socialfoot fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+		    <li class="social-footer"><a href="https://www.linkedin.com/in/ang%C3%A9lique-souvant-02350b14b/" rel="nofollow" target="_blank"> <i class="socialfoot fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+		    <li class="social-footer"><i style="color:darkred;" class="fa fa-empire fa-2x" aria-hidden="true"></i></a></li>
+	    </ul>
+	</div>
 </footer>
 <!--code javascript-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -300,79 +324,3 @@
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
-
-
-   <!--         <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card-deck">
-                            
-                            <div class="card">
-                                <a class="img-card">
-                                    <img class="card-img-top" src="img/ancre_logo.png" alt="logo ancre">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Site ancre projet tutoré</h4>
-                                    <p class="card-text">J'ai crée le site d'agence de projet tutoré pour mon groupe. <a class="link-rea" href="http://ancre.angeliquesouvant.fr" target="_blank" >Visiter le site</a></p>
-                                </div>
-                                <button type="button" class="linkreal btn btn-secondary" data-toggle="modal" data-target=".modal-ancre">En savoir plus</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card-deck">
-
-                            <div class="card">
-                                <a class="img-card">
-                                    <img class="card-img-top" src="img/amjd_refonte.png" alt="logo amjd">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Refonte du site de l'AMJD</h4>
-                                    <p class="card-text">Refonte du site de l'association de danse d'Aulnay-sous-Bois en collaboration avec Nitish Peeroo.<a class="link-rea" href="http://amjd.fr/" target="_blank">Visiter le site</a></p>
-                                </div>
-
-                                <button type="button" class="linkreal btn btn-secondary" data-toggle="modal" data-target=".modal-amjd">En savoir plus</button>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card-deck">
-
-                        
-                            <div class="card">
-                                <a class="img-card">
-                                    <img class="card-img-top" src="img/logo_kenko.png" alt="logo kenko">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Projet tutoré Kenko</h4>
-                                    <p class="card-text">Dans le cadre de mon projet tutoré, nous avons imaginés la chaussure connectée Kenko.</p>
-                                </div>
-                                <button type="button" class="linkreal btn btn-secondary" data-toggle="modal" data-target=".modal-kenko">En savoir plus</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card-deck">
-
-                            <div class="card">
-                                <a class="img-card">
-                                    <img class="card-img-top" src="img/news_pgw.jpg" alt="Card image cap">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">Newsletter PGW</h4>
-                                    <p class="card-text">J'ai crée une newsletter sur le thème de la Paris Games Week pour un pojet en infographie. <a class="link-rea" href="link/news/news.html" target="_blank">Voir la newsletter</a></p>
-                                </div>
-                                <button type="button" class="linkreal btn btn-secondary" data-toggle="modal" data-target=".modal-news">En savoir plus</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div> -->
