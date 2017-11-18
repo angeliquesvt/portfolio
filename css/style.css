@@ -8,8 +8,9 @@ nav {
     box-shadow: unset!important;
 }
 *{
-    font-family: 'Ubuntu', sans-serif;
-
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 #particles-js{
     width: 100%;
@@ -34,10 +35,6 @@ nav {
 }
 #accueil .container {
     margin: 0;
-}
-.comp{
-    width: auto;
-    height: 120px;
 }
 #footer {
     padding: 2% 0 0.5%;
@@ -100,11 +97,6 @@ nav {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
 }
-
-h1 {
-    font-size:3.4rem;
-    color: #fcfcfc;
-}
 #intro{
     font-size:20px;
     color: #aeaeae;
@@ -117,20 +109,11 @@ footer{
 #presentation{
     background-color:#fcfcfc;
 }
-#titre-pres{
-    color:#302D28;
-}
-#competences{
-    background-color: #282B30;
-}
 .link-rea{
     color:#c7cc78;
 }
 .link-rea:hover{
     color:#676D4B;
-}
-#titre-comp{
-
 }
 .social-footer{
     margin-left: 15px;
@@ -204,8 +187,6 @@ footer{
 .mobile-menu .ancre {
     font-size: 25px;
 }
-
-
 #nav-icon {
     width: 50px;
     height: 49px;
@@ -325,19 +306,34 @@ footer{
     }
 }
 
-.liste-comp img{
-    width: 200px;
-}
-
-.liste-comp{
+.presentation{
     padding: 100px 0;
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    margin: 10px;
+}
+.presentation p{
+    width:700px;
+}
+.presentation img{
+    width: 200px;
+    height: auto;
+}
+.skill{
+    padding: 100px 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
     -webkit-align-items: center;
     align-items: center;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 10px 5% 10px 5%;
 }
