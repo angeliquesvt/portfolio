@@ -1,0 +1,25 @@
+.foot{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: space-between;
+    align-items: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    li{
+        margin-left: 15px;
+        list-style-type: none;
+        display: inline-block;
+    }
+    i{
+        color:#c7cc78;
+    }
+}
+footer{
+    background-color: #282B30;
+    color:white;
+    padding: 2% 0 0.5%;
+}
+
+

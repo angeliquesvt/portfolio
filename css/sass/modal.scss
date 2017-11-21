@@ -1,0 +1,9 @@
+.display-style{
+    text-decoration:none;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    &:hover{
+    	color:darkred;
+    }
+}

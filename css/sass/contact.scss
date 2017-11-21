@@ -1,0 +1,38 @@
+#contact{
+    background-color:#efefef;
+    padding: 15px;
+
+	h2{
+	    color:#3f484a;
+	    text-align: center;
+	}
+	p{
+	    text-align: center;
+	}
+}
+.social-contact{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.socials{
+    color:black;
+}
+.socials-link{
+    font-size: 14px;
+    color: grey;
+    &:hover{
+	    color: #c7cc78;
+	}
+}
+.linkreal{
+    border-radius: 1%;
+    border: none;
+    background-color:#1e282a  ;
+}
+.btn-secondary:hover{
+    border-radius: 2%;
+    border: none;
+    background-color: #c7cc78 ;
+    color:#1e282a;
+    cursor: pointer;
+}

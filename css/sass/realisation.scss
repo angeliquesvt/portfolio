@@ -1,0 +1,107 @@
+#realisations{
+    background-color:#fcfcfc;
+    padding: 15px;
+    h2{
+        text-align: center;
+        color:#3f484a;
+    }
+    p{
+        color:grey;
+        text-align: center;
+    }
+}
+
+.pf-container{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: space-between;
+    align-items: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin:0px 40px 0px 40px;
+
+    .pf{
+        position:relative;
+        margin-top:30px;
+
+        &:hover {
+            transform: scale(1.055);
+            transition: transform 0.4s ease 0s;
+            cursor:pointer;
+        } 
+        h4, h3{
+            padding: 5px;
+            position: absolute;
+            bottom:0;
+            width: 100%;
+        }
+    }
+
+}
+
+.pf-morpion{
+    background-image: url(../img/pf/morpion.jpg);
+    background-repeat: no-repeat;
+    background-color:#ffe1e1;
+    background-size: cover;
+    width: 400px;
+    height: 350px;
+
+    h3{
+        width: 100%;
+        background-color:black;
+        color: white;
+        text-align: center;
+        filter:unset;
+    }
+     p{
+        display: none;
+    } 
+    &:hover p, a{
+        display: block;
+        color: white;
+    }
+}
+.pf-ancre{
+    background-image: url(../img/pf/ancre.png);
+    background-repeat: no-repeat;
+    background-color:#f9f9f9;
+    background-size: cover;
+    background-position: bottom;
+    width: 350px;
+    height: 350px;
+}
+.pf-amjd{
+    background-image: url(../img/pf/amjd.png);
+    background-repeat: no-repeat;
+    background-color:#f9f9f9;
+    background-size: 95%;
+    background-position: center;
+    width: 450px;
+    height: 350px;
+}
+.pf-kenko{
+    background-image: url(../img/pf/kenko.png);
+    background-repeat: no-repeat;
+    background-color:#f9f9f9;
+    background-size: 95%;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+}
+.pf-news{
+    background-image: url(../img/pf/news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 350px;
+
+    h4{
+        width: 100%;
+        text-align: center;
+        color:white;
+        background-color: rgba(0,0,0, 0.6);
+    }
+}

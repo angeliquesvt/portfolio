@@ -1,0 +1,25 @@
+#competences{
+    background-color:#efefef;
+    padding: 15px;
+
+    h2{
+        text-align: center;
+        color:#3f484a;
+    }
+    
+    p{
+        color:grey;
+        text-align: center;
+    }
+}
+.skill{
+    padding: 50px 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}

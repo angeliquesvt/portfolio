@@ -4,7 +4,7 @@
 .ancre{
     font-size:18px;
 }
-nav {
+nav {  
     box-shadow: unset!important;
 }
 *{
@@ -39,18 +39,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 #accueil .container {
     margin: 0;
 }
-.linkreal{
-    border-radius: 1%;
-    border: none;
-    background-color:#1e282a  ;
-}
-.btn-secondary:hover{
-    border-radius: 2%;
-    border: none;
-    background-color: #c7cc78 ;
-    color:#1e282a;
-    cursor: pointer;
-}
 .navbar {
     background: rgba(30, 40, 43, 0);
     position: fixed;
@@ -77,47 +65,12 @@ article, aside, footer, header, hgroup, main, nav, section {
     color: grey;
 }
 
-.navbar-toggler-right {
-
-}
-
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
 }
 #intro{
     font-size:20px;
     color: #aeaeae;
-}
-.link-rea{
-    color:#c7cc78;
-}
-.link-rea:hover{
-    color:#676D4B;
-}
-.social-footer{
-    margin-left: 15px;
-    list-style-type: none;
-    display: inline-block;
-}
-.social-contact{
-    list-style-type: none;
-    margin-bottom: 10px;
-}
-.socials{
-    color:black;
-}
-.socials-link{
-    font-size: 14px;
-    color: grey;
-}
-.socials-link:hover{
-    color: #c7cc78;
-}
-.socialfoot{
-    color:#c7cc78;
-}
-.icone-comp{
-    color:#c7cc78
 }
 
 
@@ -265,9 +218,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 @media (max-width: 768px) {
     #nav-icon {
         display: block;
-    }
-    #navbarTogglerDemo02 {
-        display: none !important;
     }
     .navbar.sticky,
     .navbar {
@@ -468,4 +418,39 @@ footer{
 }
 .socialfoot{
     color:#c7cc78;
+}
+
+.social-footer{
+    margin-left: 15px;
+    list-style-type: none;
+    display: inline-block;
+}
+.social-contact{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.socials{
+    color:black;
+}
+.socials-link{
+    font-size: 14px;
+    color: grey;
+}
+.socials-link:hover{
+    color: #c7cc78;
+}
+.socialfoot{
+    color:#c7cc78;
+}
+.linkreal{
+    border-radius: 1%;
+    border: none;
+    background-color:#1e282a  ;
+}
+.btn-secondary:hover{
+    border-radius: 2%;
+    border: none;
+    background-color: #c7cc78 ;
+    color:#1e282a;
+    cursor: pointer;
 }

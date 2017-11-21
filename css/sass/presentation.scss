@@ -1,0 +1,28 @@
+#presentation{
+    background-color:#fcfcfc;
+    padding: 15px;
+
+    h2{
+        text-align: center;
+        color:#3f484a;
+    }
+} 
+.presentation{
+    padding: 50px 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+
+    p{
+        width:700px;
+    }
+    img{
+        width: 200px;
+        height: auto;
+    }
+}

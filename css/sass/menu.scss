@@ -18,7 +18,7 @@ nav {
 	    transition-timing-function: ease-in-out;
 	    padding: 7px 15px;
 	}
-		span.ancre,.navbar a {
+	span.ancre, a {
 	    color: #f5f5f5;
 	}
 	span.ancre:hover {
@@ -28,4 +28,158 @@ nav {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+}
+.ancre{
+    font-size:18px;
+}
+.mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e282a;
+    margin-left: -100%;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+
+    .nav-open {
+        margin-left: 0;
+        transition: 300ms;
+        transition-timing-function: ease-in-out;
+    }
+    ul.navbar-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    ul.navbar-nav li {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .ancre {
+        font-size: 25px;
+    }
+}
+
+#nav-icon {
+    width: 50px;
+    height: 49px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 101;
+    background-color: #1e282a;
+    display: none;
+
+    span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: calc(100% - 16px);
+        background: white;
+        opacity: 1;
+        left: 8px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+}
+ 
+
+/* Icon 4 */
+
+#nav-icon{
+    span:nth-child(1) {
+        top: 8px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    span:nth-child(2) {
+        top: 23px;
+        -webkit-transform-origin: right center;
+        -moz-transform-origin: right center;
+        -o-transform-origin: right center;
+        transform-origin: right center;
+    }
+
+    span:nth-child(3) {
+        bottom: 8px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    .menu_open {
+        span:nth-child(1) {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: 11px;
+            left: 13px;
+        }
+        span:nth-child(2) {
+            width: 0%;
+            opacity: 0;
+        }
+        span:nth-child(3) {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            bottom: 11px;
+            left: 13px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 30px;
+        letter-spacing: 12px;
+
+        &:before {
+            height: 4px;
+            top: calc(50% - 2px);
+        }
+    }
+ 
+    #nav-icon {
+        top: 10px;
+        right: 10px;
+    }
+    .mobile-menu .ancre {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-icon {
+        display: block;
+    }
+    .navbar.sticky,
+    .navbar {
+        background-color: transparent;
+        background: none;
+    }
 }
