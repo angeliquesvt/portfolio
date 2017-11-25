@@ -365,6 +365,9 @@ article, aside, footer, header, hgroup, main, nav, section {
   color: #1e282a;
   cursor: pointer; }
 
+.popup {
+  display: none; }
+
 .foot {
   display: -webkit-flex;
   display: flex;
