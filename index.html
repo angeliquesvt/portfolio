@@ -24,9 +24,8 @@
         <!--   barre de navigation -->
         <!-- BARRE DE NAVIGATION -->
         <nav class="navbar navbar-expand-md " id="startchange">
-            <a class="navbar-brand" href="#"></a>
-            <a href="" class="justify-content-start">
-                <!--  <img src="https://placehold.it/120x60" alt=""> -->
+            <a class="navbar-brand" href="#" class="justify-content-center">
+                <img width="50px" height="auto" src="img/logo.png" alt="">
             </a>
             <div class="justify-content-end collapse navbar-collapse">
                 <ul class="navbar-nav justify-content-end">
@@ -87,15 +86,14 @@
                     <p>Développement web et infographie</p>
             </header>
             	<div class="skill">
-                    <!--     <p class="text-center"><i class="icone-comp fa fa-code fa-4x" aria-hidden="true"></i></p> -->
-                        	<img src="img/competence/html.png" width="200px" alt="html css js"/>
-							<img src="img/competence/php.png" width="200px" alt="php"/>
-							<img src="img/competence/boot.png" width="200px" alt="bootstrap"/>
-							<img src="img/competence/mate.png" width="200px" alt="material"h>
-							<img src="img/competence/java.png" width="200px" alt="java"/>
-							<img src="img/competence/git.png" width="200px" alt="github"/>
-                    <!--     <p class="text-center"><i class="icone-comp fa fa-paint-brush fa-4x" aria-hidden="true"></i></p>-->
- 							<img src="img/competence/ps.png" width="300px" alt="java"/>
+                        	<figure><img src="img/competence/html.png" width="200px" alt="html css js"/><figcaption>HTML, CSS, JavaScript <br/>avancé</figcaption></figure>
+							<figure><img src="img/competence/php.png" width="200px" alt="php"/><figcaption>débutante</figcaption></figure>
+							<figure><img src="img/competence/boot.png" width="200px" alt="bootstrap"/><figcaption>Bootstrap<br/>avancé</figcaption></figure>
+							<figure><img src="img/competence/mate.png" width="200px" alt="material"h><figcaption>Materialize<br/>avancé</figcaption></figure>
+							<figure><img src="img/competence/java.png" width="200px" alt="java"/><figcaption>intermédiaire<br/>orienté objet</figcaption></figure>
+							<figure><img src="img/competence/git.png" width="200px" alt="github"/><figcaption>capable de travailler en collaboration</figcaption></figure>
+ 							<figure><img src="img/competence/ps.png" width="300px" alt="suite adobe"/><figcaption>intermédiaire<br/>photoshop<br/>illustrator<br/>indesign<br/></figcaption></figure>
+                            <figure><img src="img/competence/aftereffect.png" width="100px" alt="after effect"/><figcaption>débutante</figcaption></figure>
         </section>
         <!--  Réalisations -->
         <section id="realisations">
@@ -104,9 +102,38 @@
             	<p> Voici tout mes projets personnels et scolaires, cliquez dessus pour en savoir plus!</p>
             </header>
             <article>
-            	
-	            	<div class="pf-container">
-					<div class="pf pf-morpion" data-toggle="modal" data-target=".modal-morpion"><h3>Morpion batman vs superman</h3></div>          		
+            	<div class="pf-container">
+                    <div class="pf pf-motion" data-toggle="modal" data-target=".modal-motion">
+                        <video loop controls="controls" autoplay="true">
+                            <source src="img/video/projet.mp4" type="video/mp4" />
+                            <object type="application/x-shockwave-flash" width="400" height="222" data="http://www.youtube.com/v/HVMoJqg41Bw">
+                                <param name="movie" value="http://www.youtube.com/v/HVMoJqg41Bw" />
+                                <param name="wmode" value="transparent" />
+                             
+                              <!--[if lte IE 6 ]>
+                               <embed src="http://www.youtube.com/v/HVMoJqg41Bw" type="application/x-shockwave-flash"  allowscriptaccess="always" allowfullscreen="true" width="400" height="222">
+                               </embed>
+                              <![endif]-->
+                              Vous n'avez pas de navigateur moderne, ni Flash installé... suivez les liens ci-dessous pour télécharger les vidéos.
+                            </object>
+                        </video>
+                    </div>
+                    <div class="pf pf-motion" data-toggle="modal" data-target=".modal-worms">
+                        <video controls="controls" autoplay="true">
+                            <source src="img/video/worms.mov" type="video/mp4" />
+                            <object type="application/x-shockwave-flash" width="400" height="222" data="http://www.youtube.com/v/HVMoJqg41Bw">
+                                <param name="movie" value="http://www.youtube.com/v/HVMoJqg41Bw" />
+                                <param name="wmode" value="transparent" />
+                             
+                              <!--[if lte IE 6 ]>
+                               <embed src="http://www.youtube.com/v/HVMoJqg41Bw" type="application/x-shockwave-flash"  allowscriptaccess="always" allowfullscreen="true" width="400" height="222">
+                               </embed>
+                              <![endif]-->
+                              Vous n'avez pas de navigateur moderne, ni Flash installé... suivez les liens ci-dessous pour télécharger les vidéos.
+                            </object>
+                        </video>
+                    </div>
+					<div class="pf pf-morpion" data-toggle="modal" data-target=".modal-morpion"><h3>Morpion batman vs superman</h3></div>	
             		<div class="pf pf-ancre" data-toggle="modal" data-target=".modal-ancre"><h4>Création site ancre</h4></div>
             		<div class="pf pf-amjd" data-toggle="modal" data-target=".modal-amjd"><h4>Refonte site AMJD</h4></div>
             		<div class="pf pf-kenko" data-toggle="modal" data-target=".modal-kenko"><h4>Projet tutoré</h4></div>
@@ -116,6 +143,58 @@
         </section>
         <!-- MODALS -->
         <section>
+            <!-- MODAL MOTION -->
+            <div class="modal fade modal-motion" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div  class="container p-3" >
+                            <div  class="row">
+                                <div class="col-sm-12">
+                                    <p>C'est une courte vidéo en motion design que j'ai réalisé à l'aide du logiciel after effect.
+                                    <br/>L'exercice était de réalisé une vidéo de quelques secondes représentant 4 univers différents.
+                                    <br/>
+                                    <br/>J'ai créé tout les différents animaux sur Illustrator.
+                                    </p>
+                                        <br/>Objectif:</p>
+                                    <ul>
+                                        <li>Maitriser les bases d'after effect</li>
+                                        <li>Faire des changement de plan</li>
+                                        <li>Utiliser les différentes techniques de motions design maitrisés</li>
+                                    </ul>
+                                    <a class="display-style" href="link/tictactoe/tictactoe.html" target="_blank"> Visiter le lien </a>
+                                    <br/>
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL WORMS -->
+            <div class="modal fade modal-worms" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div  class="container p-3" >
+                            <div  class="row">
+                                <div class="col-sm-12">
+                                    <p>Le but de l'exercice était d'animer un ver de terre dans un paysage.
+                                    </p>
+                                        <br/>Objectif:</p>
+                                    <ul>
+                                        <li>Maitriser l'outil marionette d'after effect</li>
+                                        <li>Utiliser la 3D pour faire des paysages en 3D</li>
+                                    </ul>
+                                    <a class="display-style" href="link/tictactoe/tictactoe.html" target="_blank"> Visiter le lien </a>
+                                    <br/>
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         	<!-- MODAL MORPION -->
         	<div class="modal fade modal-morpion" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -142,6 +221,7 @@
                     </div>
                 </div>
             </div>
+            <!-- MODAL ANCRE -->
             <div class="modal fade modal-ancre" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">

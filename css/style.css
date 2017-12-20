@@ -238,6 +238,9 @@ article, aside, footer, header, hgroup, main, nav, section {
   align-items: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .skill figcaption {
+    color: grey;
+    text-align: center; }
 
 #realisations {
   background-color: #fcfcfc;
@@ -272,9 +275,18 @@ article, aside, footer, header, hgroup, main, nav, section {
       bottom: 0;
       width: 100%; }
 
+.pf {
+  background-repeat: no-repeat; }
+
+.pf-motion {
+  background-color: none;
+  height: 350px; }
+  .pf-motion video {
+    height: 350px;
+    width: auto; }
+
 .pf-morpion {
   background-image: url(../img/pf/morpion.jpg);
-  background-repeat: no-repeat;
   background-color: #ffe1e1;
   background-size: cover;
   background-position: -90px;
@@ -294,7 +306,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .pf-ancre {
   background-image: url(../img/pf/ancre.png);
-  background-repeat: no-repeat;
   background-color: #f9f9f9;
   background-size: cover;
   background-position: bottom;
@@ -312,7 +323,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .pf-kenko {
   background-image: url(../img/pf/kenko.png);
-  background-repeat: no-repeat;
   background-color: #f9f9f9;
   background-size: 95%;
   background-position: center;
@@ -321,7 +331,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .pf-news {
   background-image: url(../img/pf/news.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   width: 550px;
   height: 350px; }

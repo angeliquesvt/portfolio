@@ -41,9 +41,19 @@
 
 }
 
+.pf{
+    background-repeat: no-repeat;
+}
+.pf-motion{
+    background-color:none;
+    height: 350px;
+    video{
+    height:350px;
+    width:auto;
+    }
+}
 .pf-morpion{
     background-image: url(../img/pf/morpion.jpg);
-    background-repeat: no-repeat;
     background-color:#ffe1e1;
     background-size: cover;
     background-position:-90px;
@@ -67,7 +77,6 @@
 }
 .pf-ancre{
     background-image: url(../img/pf/ancre.png);
-    background-repeat: no-repeat;
     background-color:#f9f9f9;
     background-size: cover;
     background-position: bottom;
@@ -85,7 +94,6 @@
 }
 .pf-kenko{
     background-image: url(../img/pf/kenko.png);
-    background-repeat: no-repeat;
     background-color:#f9f9f9;
     background-size: 95%;
     background-position: center;
@@ -94,7 +102,6 @@
 }
 .pf-news{
     background-image: url(../img/pf/news.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     width: 550px;
     height: 350px;
