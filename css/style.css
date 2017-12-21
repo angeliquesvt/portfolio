@@ -156,7 +156,11 @@ nav {
   .navbar.sticky,
   .navbar {
     background-color: transparent;
-    background: none; } }
+    background: none; }
+    .navbar-brand{
+      display: none;
+      }
+    }
 #intro {
   font-size: 20px;
   color: #aeaeae; }
@@ -238,6 +242,9 @@ article, aside, footer, header, hgroup, main, nav, section {
   align-items: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .skill img{
+    margin-left: 40px;
+  }
   .skill figcaption {
     color: grey;
     text-align: center; }
@@ -278,12 +285,47 @@ article, aside, footer, header, hgroup, main, nav, section {
 .pf {
   background-repeat: no-repeat; }
 
+.pf-snake {
+  background-image: url(../img/pf/snake.gif);
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-position: bottom;
+  width: 350px;
+  height: 350px; 
+}
+.pf-snake h3{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    filter: unset;
+}
 .pf-motion {
   background-color: none;
   height: 350px; }
   .pf-motion video {
     height: 350px;
-    width: auto; }
+    width: auto; 
+  }
+
+  @media(max-width:767px){
+    .pf-motion {
+    background-color: none;
+    height: 350px; }
+    .pf-motion video {
+      height: auto;
+      width: 400px; 
+    }
+  }
+  @media(max-width:400px){
+    .pf-motion {
+    background-color: none;
+    height: 350px; }
+    .pf-motion video {
+      height: auto;
+      width: 250px; 
+    }
+  }
 
 .pf-morpion {
   background-image: url(../img/pf/morpion.jpg);

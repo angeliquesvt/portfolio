@@ -1,0 +1,39 @@
+table {
+	border-collapse : collapse;
+	margin : 50px 50px;
+}
+
+td{
+	width : 10px;
+	height : 10px;
+}
+
+#start {
+	width: 100px;
+	height: 50px;
+	background-color: lightgrey;
+	display: inline-block;
+	border: solid black 1px;
+	text-align: center;
+	margin-left: 50px;
+}
+#stop {
+	width: 100px;
+	height: 50px;
+	background-color: lightgrey;
+	display: inline-block;
+	border: solid black 1px;
+	margin-left: 100px;
+	text-align: center;
+}
+#reset {
+	width: 100px;
+	height: 50px;
+	background-color: lightgrey;
+	display: inline-block;
+	border: solid black 1px;
+	margin-left: 100px;
+	text-align: center;
+
+}
+
