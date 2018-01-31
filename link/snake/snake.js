@@ -35,7 +35,7 @@ function plot (x,y,val){
     var laCase = document.getElementById("c"+x+"."+y);
     return (laCase.value);
  }
- 
+
  //fonction qui déssine le niveau
 function drawLevel(level){
 	for (var i = 0; i<size; i++) {
@@ -58,7 +58,7 @@ function shift(x,y){
 	var tail = snake.pop();
 	plot(x,y, 2);
 	plot(tail[0],tail[1], 0);
-	snake.unshift([x,y]);	
+	snake.unshift([x,y]);
 }
 
 
@@ -70,10 +70,10 @@ function move() {
 	case 0 :
 		shift(nx,ny);
 		break;
-	case 1 : 
+	case 1 :
 		death("mur") ;
 		break ;
-	case 2 : 
+	case 2 :
 		death("snake") ;
 		break ;
 	case 3:
@@ -99,19 +99,19 @@ function drive(evt){
 	console.log(evt.key);
 	switch (evt.key){
 		case "ArrowUp":
-			dx = 0 
+			dx = 0
 			dy = -1
 			break;
 		case "ArrowDown":
-			dx = 0 
+			dx = 0
 			dy = 1
-			break;	
+			break;
 		case "ArrowRight":
-			dx = 1 
+			dx = 1
 			dy = 0
 			break;
 		case "ArrowLeft":
-			dx = -1 
+			dx = -1
 			dy = 0
 			break;
 	}
@@ -125,7 +125,7 @@ score++;
 
 function start(){
 	stDep = setInterval(move ,100);
-	stGrow = setInterval(add, 200);
+	stGrow = setInterval(add, 400);
 	console.log('start');
 	document.getElementById("stop").addEventListener("click",stop ,false) ;
 	document.getElementById("start").removeEventListener("click",start);

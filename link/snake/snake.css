@@ -16,6 +16,10 @@ td{
 	border: solid black 1px;
 	text-align: center;
 	margin-left: 50px;
+	border:none;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
 }
 #stop {
 	width: 100px;
@@ -25,6 +29,10 @@ td{
 	border: solid black 1px;
 	margin-left: 100px;
 	text-align: center;
+	border:none;
+	color: white;
+	background-color: black;
+		border-radius: 10px;
 }
 #reset {
 	width: 100px;
@@ -34,6 +42,9 @@ td{
 	border: solid black 1px;
 	margin-left: 100px;
 	text-align: center;
+	border:none;
+	color: white;
+	background-color: black;
+		border-radius: 10px;
 
 }
-
